@@ -10,9 +10,8 @@
 <div class='calendar'>
     <% @week_days.each do |day| %>
       <div class='item'>
-        #リバートの為のコメントアウト
         <div class='date'>
-          <% day[:month] %>/<% day[:date] %>
+          <%= day[:month] %>/<%=day[:date] %><%=day[:wday]%>
         </div>
         <ul class='content'>
         <% if day[:plans].length != 0 %>
